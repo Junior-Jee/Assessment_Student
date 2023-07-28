@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Welcome to the Student Quiz Assessment!</h1>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required><br>
+            <input type="submit" value="Start Quiz">
+        </form>
+        <form id="quiz-form" style="display: none;">
+            <!-- Questions and options here -->
+            <div class="question">
+                <p>Question 1: What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="A"> A) Paris</label><br>
+                <label><input type="radio" name="q1" value="B"> B) London</label><br>
+                <label><input type="radio" name="q1" value="C"> C) Berlin</label><br>
+                <label><input type="radio" name="q1" value="D"> D) Madrid</label><br>
+            </div>
+            <div class="question">
+                <p>Question 2: What is the largest planet in our solar system?</p>
+                <label><input type="radio" name="q2" value="A"> A) Jupiter</label><br>
+                <label><input type="radio" name="q2" value="B"> B) Mars</label><br>
+                <label><input type="radio" name="q2" value="C"> C) Earth</label><br>
+                <label><input type="radio" name="q2" value="D"> D) Venus</label><br>
+            </div>
+            <div class="question">
+                <p>Question 3: What is the chemical symbol for water?</p>
+                <label><input type="radio" name="q3" value="A"> A) O2</label><br>
+                <label><input type="radio" name="q3" value="B"> B) CO2</label><br>
+                <label><input type="radio" name="q3" value="C"> C) H2O</label><br>
+                <label><input type="radio" name="q3" value="D"> D) NaCl</label><br>
+            </div>
+            <div class="question">
+                <p>Question 4: Which planet is known as the Red Planet?</p>
+                <label><input type="radio" name="q4" value="A"> A) Venus</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Mars</label><br>
+                <label><input type="radio" name="q4" value="C"> C) Mercury</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Jupiter</label><br>
+            </div>
+            <div class="question">
+                <p>Question 5: Which gas do plants absorb during photosynthesis?</p>
+                <label><input type="radio" name="q5" value="A"> A) Carbon dioxide</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Oxygen</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Nitrogen</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Hydrogen</label><br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="result" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
